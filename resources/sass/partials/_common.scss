@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list_inline {
+    list-style: none;
+
+    li {
+        display: inline-block;
+
+        a {
+            display: inline-block;
+            font-size: 20px;
+        }
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}

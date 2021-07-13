@@ -1,0 +1,41 @@
+header {
+    height: 100px;
+    line-height: 100px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+ul {
+    list-style: none;
+    display: flex;
+    vertical-align: middle;
+    li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 20px 20px;
+        color: $textColor;
+        font-size: 12px;
+        font-weight: bolder;
+        &.active,
+        &:hover {
+            border-bottom: 4px solid $mainColor;
+        }
+    }
+}
+img {
+    height: 70px;
+    vertical-align: middle;
+}
+
+.jumbotron {
+    position: relative;
+    height: 300px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+}
