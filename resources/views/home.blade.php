@@ -49,7 +49,57 @@
         <div class="jumbotron">
             <img src="{{ asset("images/jumbotron.jpg") }}" alt="Jumbotron">
         </div>
-        <main>my main</main>
-        <footer>my footer</footer>
+        <main>
+            <div class="container">
+                <div class="content">
+                    @foreach ($comics as $comic)
+                    <div class="card">
+                        <img src="{{ $comic["thumb"] }}" alt="{{ $comic["series"] }}">
+                        <h4>{{ $comic["series"] }}</h4>
+                    </div>
+                    @endforeach
+                </div>
+        </main>
+        <footer>
+            <div class="footer_bottom">
+                <div class="container">
+                      <div class="button">
+                          <a href="#">sign-up now!</a>
+                      </div>
+                      <div class="social">
+                          <ul>
+                              <li>
+                                  <a class="follow" href="#">FOLLOW US</a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <img src="{{ asset("images/footer-facebook.png") }}" alt="fb">
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <img src="{{ asset("images/footer-twitter.png") }}" alt="twitter">
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <img src="{{ asset("images/footer-youtube.png") }}" alt="yt">
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <img src="{{ asset("images/footer-pinterest.png") }}" alt="pinterest">
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <img src="{{ asset("images/footer-periscope.png") }}" alt="periscope">
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                </div>
+              </div>
+        </footer>
     </body>
 </html>

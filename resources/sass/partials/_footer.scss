@@ -1,0 +1,45 @@
+footer {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer_bottom {
+        height: 100px;
+        line-height: 100px;
+        background-color: $textColor;
+    }
+    .button a {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 10px 10px;
+        border: 2px solid $mainColor;
+        color: white;
+        font-weight: bolder;
+        font-size: 14px;
+        &:hover {
+            border: 2px solid $white;
+            color: $mainColor;
+        }
+    }
+    .follow {
+        text-decoration: none;
+        color: $mainColor;
+        font-size: 14px;
+        font-weight: bolder;
+        vertical-align: middle;
+        &:hover {
+            color: $white;
+        }
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        li a {
+            padding: 0 8px;
+        }
+    }
+    img {
+        height: 30px;
+        vertical-align: middle;
+    }
+}
