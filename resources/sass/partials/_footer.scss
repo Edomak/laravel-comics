@@ -13,11 +13,10 @@ footer {
         text-transform: uppercase;
         padding: 10px 10px;
         border: 2px solid $mainColor;
-        color: white;
+        color: $white;
         font-weight: bolder;
         font-size: 14px;
         &:hover {
-            border: 2px solid $white;
             color: $mainColor;
         }
     }

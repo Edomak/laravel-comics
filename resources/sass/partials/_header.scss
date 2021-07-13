@@ -1,6 +1,7 @@
 header {
     height: 100px;
     line-height: 100px;
+    
     .container {
         display: flex;
         justify-content: space-between;
@@ -17,9 +18,9 @@ ul {
         color: $textColor;
         font-size: 12px;
         font-weight: bolder;
-        &.active,
+        
         &:hover {
-            border-bottom: 4px solid $mainColor;
+            color: $mainColor;
         }
     }
 }

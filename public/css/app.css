@@ -51,9 +51,8 @@ ul li a {
   font-weight: bolder;
 }
 
-ul li a.active,
 ul li a:hover {
-  border-bottom: 4px solid #0082f9;
+  color: #0082f9;
 }
 
 img {
@@ -132,7 +131,6 @@ footer .button a {
 }
 
 footer .button a:hover {
-  border: 2px solid white;
   color: #0082f9;
 }
 
